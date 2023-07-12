@@ -9,14 +9,14 @@ phases:
   build:
     commands:
       # Build Docker image
-      - docker build -t nodejsapp22 .
+      - docker build -t testing123 .
 
   post_build:
     commands:
       # Tag the image
-      - docker tag nodejsapp22:latest 591802062023.dkr.ecr.us-east-1.amazonaws.com/nodejsapp22:latest
+      - docker tag testing123:latest 591802062023.dkr.ecr.us-east-1.amazonaws.com/testing123:latest
       # Push the image to ECR
-      - docker push 591802062023.dkr.ecr.us-east-1.amazonaws.com/nodejsapp22:latest
+      - docker push 591802062023.dkr.ecr.us-east-1.amazonaws.com/testing123:latest
 
 artifacts:
   files: []
