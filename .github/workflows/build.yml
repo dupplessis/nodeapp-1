@@ -13,7 +13,7 @@ jobs:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-east-1
-    - name: Run CodeBuild
+    - name: Run CodePipeline
       uses: aws-actions/aws-codebuild-run-build@v1
       with:
-        project-name: mycodebuild
+        project-name: temp
