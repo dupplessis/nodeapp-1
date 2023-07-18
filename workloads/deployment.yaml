@@ -27,7 +27,7 @@ spec:
     spec:
       containers:
       - name: hello-app-demo
-        image: 591802062023.dkr.ecr.us-east-1.amazonaws.com/mywebapprepo:latest
+        image: 591802062023.dkr.ecr.us-east-1.amazonaws.com/mywebapprepo:90
         ports:
         - name: hello-app-port
           containerPort: 8080
