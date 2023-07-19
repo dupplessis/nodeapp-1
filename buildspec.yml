@@ -17,4 +17,6 @@ phases:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
       - docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:latest
+      - fluxctl sync --k8s-fwd-ns flux
+      - kubectl rollout restart deployment/hello-app-demo -n flux-demo
 
