@@ -20,4 +20,4 @@ jobs:
       - name: Run CodePipeline
         uses: aws-actions/aws-codebuild-run-build@v1
         with:
-          project-name: tem
+          project-name: temp
