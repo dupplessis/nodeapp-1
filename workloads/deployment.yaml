@@ -10,7 +10,7 @@ metadata:
     fluxcd.io/automated: "true"
     fluxcd.io/tag.hello-app: semver:~1.0.0
     # can be <glob, semver and regexp>:
-    # https://fluxcd.io/legacy/flux/references/fluxctl/#filter-pattern-typess
+    # https://fluxcd.io/legacy/flux/references/fluxctl/#filter-pattern-typesss
 spec:
   replicas: 1
   strategy:
