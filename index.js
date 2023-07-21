@@ -3,7 +3,7 @@ const port = process.env.PORT || 3000;
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
-  const msg = 'this is my new cicd application using flux\n'
+  const msg = 'this is my new cicd\n'
   res.end(msg);
 });
 
