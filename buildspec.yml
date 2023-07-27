@@ -15,6 +15,7 @@ phases:
       - mv kubectl /usr/local/bin/
       - echo check kubectl access
       - kubectl version --client
+      - kubectl get nodes
       - echo Logging into Amazon EKS...
       - aws eks --region $AWS_DEFAULT_REGION update-kubeconfig --name $AWS_CLUSTER_NAME
       - kubectl get nodes
