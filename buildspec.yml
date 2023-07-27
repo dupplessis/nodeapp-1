@@ -17,7 +17,7 @@ phases:
       - kubectl version --client
       - echo Logging into Amazon EKS...
       - aws eks --region $AWS_DEFAULT_REGION update-kubeconfig --name $AWS_CLUSTER_NAME
-      - kubectl get svc
+      - kubectl get nodes
   build:
     commands:
       - echo Build started on `date`
