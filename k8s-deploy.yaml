@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: node-app
-        image: 283541956656.dkr.ecr.us-east-1.amazonaws.com/node-app-image:latest
+        image: 283541956656.dkr.ecr.us-east-1.amazonaws.com/my-new-ecr:latest
         ports:
         - containerPort: 80
 
