@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-app-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: node-app
+  template:
+    metadata:
+      labels:
+        app: node-app
+    spec:
+      containers:
+      - name: node-app
+        image: 283541956656.dkr.ecr.us-east-1.amazonaws.com/my-new-ecr:latest
+        ports:
+        - containerPort: 80
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: node-app-service
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 3000
+      targetPort: 80
+  selector:
+    app: node-app
